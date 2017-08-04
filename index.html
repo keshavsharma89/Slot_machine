@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" /><!-- Basic css -->
+	<link rel="stylesheet" href="css/jquery.slotmachine.css" type="text/css" media="screen" /><!-- Most of the transaction effects -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script><!-- JQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script><!-- Angular library -->
+	<script type="text/javascript" src="js/jquery.slotmachine.js"></script><!-- Slotmachine plugin and associated function  -->
+	<script src="js/app.js"></script><!-- App script will contain the app defination basic settings -->
+	<script src="js/controller.js"></script><!-- controller.js will contain the controller(s) -->
+</head>
+<body ng-app='myApp' ng-controller="slotController">
+	<div class="outterdiv" ng-include="'partials/header.html'"></div>
+	<div class="outterdiv" ng-include="'partials/body.html'"></div>
+</body>
+</html>

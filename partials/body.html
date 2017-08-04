@@ -1,0 +1,84 @@
+<div class="wrapper">
+	
+	<section class="message" ng-show="msg!=''">
+		{{msg}}
+	</section>
+	<section class="container">
+		<div class="row" ng-show="debug.check">
+			<div class="Topsection">
+				<select ng-model="debug.symbol1" ng-selected="debug.symbol1==item.id" ng-options="item.id as item.label for item in symbols track by item.id" ></select>
+				<select ng-model="debug.line1" ng-options="item.label for item in line track by item.id"></select>
+			</div>
+			<div class="Topsection">
+				<select ng-model="debug.symbol2" ng-options="item.label for item in symbols track by item.id"></select>
+				<select ng-model="debug.line2" ng-options="item.label for item in line track by item.id"></select>
+			</div>
+			<div class="Topsection">
+				<select ng-model="debug.symbol3" ng-options="item.label for item in symbols track by item.id"></select>
+				<select ng-model="debug.line3" ng-options="item.label for item in line track by item.id"></select>
+			</div>
+		</div>
+		<div class="casino-1-div">
+			<div id="casino1" machine class="slotMachine machine1">
+				<div class="slot slot1"></div>
+				<div class="slot slot2"></div>
+				<div class="slot slot3"></div>
+				<div class="slot slot4"></div>
+				<div class="slot slot5"></div>
+			</div>
+			<div class="devider-divs">
+				<ul>
+					<li class="winline1"></li>
+					<li class="winline2"></li>
+					<li class="winline3"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="casino-1-div">
+			<div id="casino2" machine ng-model="machine1" class="slotMachine machine2">
+				<div class="slot slot1"></div>
+				<div class="slot slot2"></div>
+				<div class="slot slot3"></div>
+				<div class="slot slot4"></div>
+				<div class="slot slot5"></div>
+			</div>
+			<div class="devider-divs">
+				<ul>
+					<li class="winline1"></li>
+					<li class="winline2"></li>
+					<li class="winline3"></li>
+				</ul>
+			</div>
+		</div>
+		<div id="casino3" machine class="slotMachine machine3">
+			<div class="slot slot1"></div>
+			<div class="slot slot2"></div>
+			<div class="slot slot3"></div>
+			<div class="slot slot4"></div>
+			<div class="slot slot5"></div>
+		</div>
+		<div class="row">
+			<div class="item"><a ng-show="showbtn" ng-click="shuffle()" class="btn">Shuffle</a></div>
+			<div class="item">
+				<input class="floatright" type="checkbox" ng-model="debug.check" name="debug">
+				<label class="floatright" for="debug">Debug Mode </label>
+			</div>
+		</div>
+	</section>			
+	<section class="container">
+		<div class="paytable">
+			<ul>
+				<li><label>Pay Table</label></li>
+				<li ng-repeat="(key, value) in paytable">
+					<div class="rule rule{{key}}">
+						<div class="imgarea">
+							<img class="payicon" ng-repeat="img in value.images track by $index" src="img/{{img}}">
+						</div>
+						<label>On {{value.line}} win line</label>
+						<span class="amount">{{value.amount}}</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+</div>

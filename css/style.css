@@ -1,0 +1,203 @@
+ @charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+body{
+	background-color: #f1f1f1;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+body, .outterdiv, .paytable, .paytable ul{
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+input,select{
+outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+header,footer{
+	width: 100%;
+    display: inline-block;
+    /* float: left; */
+    background-color: #3367d6;
+    padding: 10px 7px;
+	color: #fff;
+}
+.wrapper{
+	margin: 0 auto;
+    width: 85%;
+}
+.floatright{
+	float:right;
+}
+.message{
+    float: left;
+    padding: 10px 0px 10px 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 1030px;
+    box-shadow: 4px 4px 2px #afafaf;
+    color: #ab0804;
+    background-color: #f1b7b7;
+}
+.container {
+    padding: 10px 0px 0px 10px;
+    max-width: 500px;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 465px;
+    width: 50%;
+    float: left;
+    background-color: #fff;
+    box-shadow: 4px 4px 2px #afafaf;
+}
+.slotMachine{
+	width: 150px;
+	border: 2px solid #f0f0f0;
+	height: 242px; /*121px*/
+	display: inline-block;
+	text-align: center;
+	background-color: #ffffff;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.slotMachine .slot{
+	height:121px;
+	background-repeat: no-repeat;
+    /*border: 1px solid;*/
+}
+
+.slot1 {
+	background-image: url("../img/Cherry.png");
+}
+.slot2 {
+	background-image: url("../img/2xBAR.png");
+}
+.slot3 {
+	background-image: url("../img/3xBAR.png");
+}
+.slot4 {
+	background-image: url("../img/7.png");
+}
+.slot5 {
+	background-image: url("../img/BAR.png");
+}
+
+/*  Custom CSS  */
+.casino-1-div {
+    position: relative;
+    display: inline-block;
+}
+.devider-divs {
+    position: absolute;
+    top: 0;
+    right: -6px;
+    list-style: none;
+}
+.devider-divs ul {
+    list-style: none;
+    display: inline-block;
+    height: 246px;
+    padding: 0;
+    margin: 0;
+}
+.devider-divs ul li {
+    border-bottom: 9px solid #f0f0f0;
+    height: 55px;
+    display: block;
+    width: 18px;
+}
+
+
+.paytable ul {
+	list-style: none;
+}
+.paytable li {
+    padding: 2px;
+    font-size: 20px;
+    color:#6d6d6d;
+    margin-right: 10px;
+}
+img.payicon {
+    height: 40px;
+}
+.imgarea {
+    display: inline;
+    margin-right: 20px;
+    width: 35%!important;
+    float: left;
+}
+.rule label{
+	float: left;
+    padding-top: 10px;
+}
+
+span.amount {
+    color: red;
+    font-weight: bold;
+    float: right;
+    padding: 10px 10px 0px 0px;
+    display: inline;
+}
+.winline{
+	width: 57%!important;
+}
+.Topsection {
+    width: 32.75%;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.Topsection select{
+    height: 30px;
+    width: 75px;
+    font-size: 15px;
+    padding: 2px;
+    color: #6d6d6d;
+    background-color: white;
+}
+.balindicator{
+    height: 30px;
+    width: 400px;
+    font-size: 20px;
+    padding-left: 7px;
+    color: #acbcdd;
+    background-color: #2850a7;
+	border: 1px solid #2850a7;
+    border-radius: 2px;
+}
+
+input.balindicator::-webkit-input-placeholder {
+color: #acbcdd !important;
+}
+.item .btn{
+	color: #2850a7;
+    border: 1px solid #2850a7;
+    box-shadow: 1px 1px 3px #afafaf;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.item .btn:hover{
+	color: #fff;
+    background: #3367d6;
+}
+.row .item{
+	width: 49%;
+    display: inline-block;
+    color: #6d6d6d;;
+    padding-top: 5px;
+}
+.rule{
+	border: 2px solid #f0f0f0;
+	float: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
